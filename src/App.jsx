@@ -26,7 +26,7 @@ function App() {
 
   const calcularResultado = () =>{
     if (input){
-      setInput(evaluate(input).toString())
+      setInput(evaluate(input).toFixed(4).replace(/\.0+$/, ''))
     }else{
       Swal.fire('Por favor ingrese valores para realizar los cálculos')
 
